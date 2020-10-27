@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<header>
+    <title>Getzoid | Home</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/noty/3.1.4/noty.min.css">
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/noty/3.1.4/noty.min.js"></script>
+    <script src="../js/jquery.min.js"></script>
+    <link rel='icon' type='image/png' href="../images/getzoid1.png">
+    <link rel="stylesheet" type="text/css" href="../css/header.css">
+    <link rel="stylesheet" type="text/css" href="../css/home.css">
+</header>
+<body>
+
+
+    <header id="main-header">
+        <div>
+            <a href="home.html"><span id="website-name">Getzoid</span></a>
+        </div>
+
+        <div>
+            <a href="/profile.html" style="margin:100px">User</a>
+            <a href="sign_in.html" id="logout-btn"><span>Log Out</span></a>
+        </div>
+    </header>
+
+
+
+    <main id="main-container" class="flex">
+
+        <div id="left-side-bar" class="flex">
+            <img src="../images/default.png">
+            <a href="home.html">Feed</a>
+            <a href="profile.html">My profile</a>
+        </div>
+
+        <div id="main-feed-container" class="flex">
+            <div>
+                <div id="new-post-form">
+                    <form action="" method="POST">
+                        <textarea id="post-content" rows=5 cols=60 placeholder="What's up in your mind?" required></textarea>
+                        <input type="text" id="username" placeholder="Your name..." required>
+                        <button id="post-submit-button" type="submit">Submit</button>
+                    </form>
+                </div>
+            </div>
+
+            <div id="posts-list-container" class="flex">
+                <div class="post-container flex">
+                    <div class="post-user flex">
+                        <span class="flex post-user-name"><img src="../images/default.png"> <strong>Kenny</strong></span><span class="delete-button" title="delete post"><img src="../images/delete-button.png"></span>
+                    </div>
+                    <hr>
+                    <span class="content">New Post</span>
+                    <hr>
+                    <span class="post-details"><span class="like-button"><img src="../images/like-button.png"> 0 Likes</span><span>Created At : 28 Oct 3:55</span></span>
+                    <form class="new-comment-form" action="">
+                        <input type="text" id="new-comment" class="new-comment-content" placeholder="Add comment...">
+                        <input type="submit" class="new-comment-submit">
+                    </form>
+                </div> 
+            </div>
+        </div>
+
+    </main>
+
+
+    <script>
+        new Noty({
+            theme : 'sunset',
+            text: 'Successfully Logged In',
+            timeout : 1000,
+            progressBar : true,
+            layout : 'topRight'
+        }).show();
+    </script>
+</body>
