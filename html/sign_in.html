@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<header>
+    <link rel="stylesheet" type="text/css" href="../css/authentication.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/noty/3.1.4/noty.min.css">
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/noty/3.1.4/noty.min.js"></script>
+</header>
+<body>
+    <div id="form-container">
+        <div id="website-name">
+        GETZOID
+        </div>
+        <h2>SIGN IN</h2>
+        <form action="/users/sign-in" method="POST">
+            <input type="text" name="email" placeholder="Email">
+            <input type="password" name="password" placeholder="Password">
+            <button id="submit-button" type="submit">Log In</button>
+        </form>
+        <a href="sign_up.html"><button  class="other-button">Don't Have An Account ? Sign Up</button></a>
+        <span>OR</span>
+        <button class="other-button"><img src="../images/google.png"></img>Sign In</button>
+    </div>
+    </script>
+</body>
+</html>

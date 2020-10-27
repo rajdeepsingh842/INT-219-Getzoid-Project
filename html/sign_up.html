@@ -1,0 +1,20 @@
+<link rel="stylesheet" ty[e="text/css" href="../css/authentication.css">
+<link rel="stylesheet" ty[e="text/css" href="../css/header.css">
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/noty/3.1.4/noty.min.css">
+<script src="https://cdnjs.cloudflare.com/ajax/libs/noty/3.1.4/noty.min.js"></script>
+<div id="form-container">
+    <div id="website-name">
+        GETZOID
+    </div>
+    <h2>SIGN UP</h2>
+    <form action="users/sign-up" method="POST">
+        <input type="text" name="name" placeholder="Username">
+        <input type="email" name="email" placeholder="Email">
+        <input type="password" name="password" placeholder="Password">
+        <input type="password" name="confirm_password" placeholder="Confirm Password">
+        <button id="submit-button" type="submit">Sign Up</button>
+    </form>
+    <a href="sign_in.html"><button  class="other-button">Already a User ? Sign In</button></a>
+    <span>OR</span>
+    <button class="other-button"><img src="../images/google.png"></img>Sign Up</button>
+</div>

@@ -1,0 +1,28 @@
+body {
+  margin: 0px; }
+
+.flex {
+  display: flex;
+  flex-wrap: wrap; }
+
+#main-header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  width: 100%;
+  padding: 15px 20px;
+  background: #3aa8b6;
+  position: fixed;
+  top: 0px;
+  box-shadow: 0px 0px 20px 2px #b47676; }
+  #main-header a {
+    color: white;
+    font-family: sans-serif;
+    font-weight: bolder;
+    font-size: 20px;
+    text-decoration: none; }
+  #main-header #logout-btn {
+    position: relative;
+    right: 50px;
+    background: #7685af;
+    padding: 5px 10px; }
