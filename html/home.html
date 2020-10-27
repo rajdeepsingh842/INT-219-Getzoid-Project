@@ -16,8 +16,8 @@
             <a href="home.html"><span id="website-name">Getzoid</span></a>
         </div>
 
-        <div>
-            <a href="/profile.html" style="margin:100px">User</a>
+        <div style="align-items: center;">
+            <a href="/profile.html" style="margin:100px"><img src="../images/default.png" height="30px" width="30px"> &nbsp;&nbsp;User</a>
             <a href="sign_in.html" id="logout-btn"><span>Log Out</span></a>
         </div>
     </header>
@@ -44,9 +44,9 @@
             </div>
 
             <div id="posts-list-container" class="flex">
-                <div class="post-container flex">
+                <div id="post-container-1" class="post-container flex">
                     <div class="post-user flex">
-                        <span class="flex post-user-name"><img src="../images/default.png"> <strong>Kenny</strong></span><span class="delete-button" title="delete post"><img src="../images/delete-button.png"></span>
+                        <span class="flex post-user-name"><img src="../images/default.png"> <strong>Kenny</strong></span><span class="delete-button" id="1" title="delete post"><img src="../images/delete-button.png"></span>
                     </div>
                     <hr>
                     <span class="content">New Post</span>
@@ -71,5 +71,9 @@
             progressBar : true,
             layout : 'topRight'
         }).show();
+    </script>
+
+    <script src="../js/new_post.js">
+
     </script>
 </body>
