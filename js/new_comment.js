@@ -33,7 +33,7 @@
                 text : 'New Comment Added'
             }).show();
 
-            console.log(newComment);
+            addDeleteButton($('.delete-comment-button',newComment));
             $('#post-container-'+postId).append(newComment);
         });
     }
@@ -47,8 +47,34 @@
         return $(`
 
         <div id="comment-${commentCount}" class="comment-container">
-                        <span>${commentContent} by ${commentUser}</span><spn class="delete-comment-button" id="delete-comment-button-${commentCount}"><img src = "../images/delete-button.png"></button>
+                        <span>${commentContent} by ${commentUser}</span><spn class="delete-comment-button" id="${commentCount}"><img src = "../images/delete-button.png"></button>
         </div>
         `);
+    }
+
+    function addDeleteButton(deleteButton){
+        $(deleteButton).on('click',function(e){
+            e.preventDefault();
+
+            let commentID = $(deleteButton).attr('id');
+
+            $('#comment-'+commentID).remove();
+
+            new Noty({
+                theme : 'sunset',
+                timeout :1000,
+                progressBar : true,
+                layout : 'topRight',
+                text : 'Comment Deleted'
+            }).show();
+
+
+        })
+    }
+
+    let allCommentDeleteButtons = $('.delete-comment-button');
+
+    for(let deleteButton of allCommentDeleteButtons){
+        addDeleteButton(deleteButton);
     }
 }
