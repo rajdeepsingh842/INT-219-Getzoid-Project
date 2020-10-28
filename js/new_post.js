@@ -10,7 +10,7 @@
 
                 new Noty({
                     theme : 'sunset',
-                    text : 'Fill up all fileds',
+                    text : 'Fill up all fields',
                     progressBar : true,
                     timeout : 1000,
                     layout : 'topRight'
@@ -20,15 +20,26 @@
         }
 
         let newPost = getNewPost($('#post-content').val() , $('#username').val());
+        addLikeButton($('.like-button',newPost)[0]);
         addDeleteButton($('.delete-button',newPost)[0]);
 
         postCount++;
+
+        new Noty({
+            theme : 'sunset',
+            text : 'New Post Created',
+            timeout:1000,
+            progressBar:true,
+            layout : 'topRight'
+        }).show();
 
         $('#posts-list-container').prepend(newPost);
 
     });
 
     function getNewPost(content , username){
+
+        let date=new Date();
 
         return $(`
         
@@ -39,7 +50,7 @@
                     <hr>
                     <span class="content">${content}</span>
                     <hr>
-                    <span class="post-details"><span class="like-button"><img src="../images/like-button.png"> 0 Likes</span><span>Created At : 28 Oct 3:55</span></span>
+                    <span class="post-details"><span id="${postCount}" class="like-button"><img src="../images/like-button.png"><span id="likes-${postCount}"> 0 </span>Likes</span><span>Created At : ${date}</span></span>
                     <form class="new-comment-form" action="">
                         <input type="text" id="new-comment" class="new-comment-content" placeholder="Add comment...">
                         <input type="submit" class="new-comment-submit">
@@ -55,6 +66,13 @@
         $(deleteButton).on('click',function(){
             let id= deleteButton.getAttribute('id');
             $(`#post-container-${id}`).remove();
+            new Noty({
+                theme : 'sunset',
+                text : 'Post Deleted',
+                timeout:1000,
+                progressBar:true,
+                layout : 'topRight'
+            }).show();
         });
     }
 

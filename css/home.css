@@ -10,6 +10,7 @@
   width : 20%;
   padding : 20px;
   align-items : center;
+  border-right : 1px solid grey;
   
 }
 
@@ -43,6 +44,7 @@
 #main-feed-container{
   flex-direction: column;
   padding: 0px 100px;
+  border-right : 1px solid grey;
 }
 
 #post-submit-button{
