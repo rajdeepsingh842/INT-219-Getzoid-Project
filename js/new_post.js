@@ -22,6 +22,7 @@
         let newPost = getNewPost($('#post-content').val() , $('#username').val());
         addLikeButton($('.like-button',newPost)[0]);
         addDeleteButton($('.delete-button',newPost)[0]);
+        addSubmitCommentButton($('.new-comment-submit',newPost)[0]);
 
         postCount++;
 
@@ -52,8 +53,9 @@
                     <hr>
                     <span class="post-details"><span id="${postCount}" class="like-button"><img src="../images/like-button.png"><span id="likes-${postCount}"> 0 </span>Likes</span><span>Created At : ${date}</span></span>
                     <form class="new-comment-form" action="">
-                        <input type="text" id="new-comment" class="new-comment-content" placeholder="Add comment...">
-                        <input type="submit" class="new-comment-submit">
+                        <input type="text" id="new-comment-${postCount}" class="new-comment-content" placeholder="Add comment..." required>
+                        <input type="text" id="comment-form-name-${postCount}" placeholder="Your name" required>
+                        <input type="submit" id="${postCount}" class="new-comment-submit">
                     </form>
         </div> 
         

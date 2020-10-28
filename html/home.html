@@ -53,9 +53,13 @@
                     <hr>
                     <span class="post-details"><span class="like-button" id="1"><img src="../images/like-button.png"><span id="likes-1">0</span>Likes</span><span>Created At : 28 Oct 3:55</span></span>
                     <form class="new-comment-form" action="">
-                        <input type="text" id="new-comment" class="new-comment-content" placeholder="Add comment...">
-                        <input type="submit" class="new-comment-submit">
+                        <input type="text" id="new-comment-1" class="new-comment-content" placeholder="Add comment..." required>
+                        <input type="text" id="comment-form-name-1" placeholder="Your name" required>
+                        <input type="submit" id="1" class="new-comment-submit">
                     </form>
+                    <div id="comment-1" class="comment-container">
+                        <span>Comment 1 by Kenny</span><spn class="delete-comment-button" id="delete-comment-button-1"><img src = "../images/delete-button.png"></button>
+                    </div>
                 </div> 
             </div>
         </div>
@@ -73,6 +77,7 @@
         }).show();
     </script>
 
+    <script src="../js/new_comment.js"></script>
     <script src="../js/post_like.js"></script>
     <script src="../js/new_post.js">
 
