@@ -223,13 +223,16 @@ hr{
 
 .chat-window{
   width : 20%;
-  margin-right : 20px;
+  margin-right : 40px;
+  flex-direction: column;
+  justify-content: flex-end;
+  height : auto;
 }
 
 .chat-details{
   background :linear-gradient(rgb(18, 18, 53),rgb(44, 75, 75));
   color : White;
-  width : 100%;
+  width : 98%;
   padding : 15px;
   justify-content: space-around;
   font-weight: bolder;
@@ -243,3 +246,64 @@ hr{
   color  : white;
   padding : 5px 10px;
 }
+
+.message-box{
+  padding : 20px;
+  height : 300px;
+  background : white;
+  transform: scaley(1);
+  flex-direction: column;
+  border : 1px solid grey;
+  width : 94%;
+}
+
+.chat-content{
+  width : 68%;
+  padding : 5px;
+  outline : 0px;
+}
+
+
+
+.chat-submit-button{
+  padding : 5px;
+  background : rgb(98, 155, 98);
+  color : white;
+  outline : 0px;
+  border : 0px;
+}
+
+.other-message{
+  text-align: left;
+  background : rgb(43, 60, 92);
+  color : white;
+  padding : 10px 20px;
+  font-family: sans-serif;
+  border-radius: 20px;
+  margin-top:10px;
+  max-width: 50%;
+}
+
+.self-message{
+  text-align: right;
+  background : rgb(43, 92, 55);
+  color : white;
+  padding : 10px 20px;
+  font-family: sans-serif;
+  border-radius: 20px;
+  margin-top:10px;
+  max-width: 50%;
+}
+
+.message-box form{
+  position: fixed;
+  bottom: 2px;
+  width : 100%;
+}
+
+.messages{
+  width : 100%;
+  flex-direction: column;
+}
+
+
