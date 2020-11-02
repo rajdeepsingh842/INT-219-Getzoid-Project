@@ -166,3 +166,48 @@ hr{
   height : 20px;
   width : 20px;
 }
+
+#online-users{
+  flex-direction: column;
+  padding : 0px 10px;
+  align-items: center;
+  width : 22%;
+}
+
+#online-users-heading{
+  font-family: sans-serif;
+  color : grey;
+}
+
+.online-user{
+  width : 100%;
+  padding : 20px;
+  color : grey;
+  justify-content: space-between;
+  box-shadow: 0px 0px 10px 2px grey;
+  align-items: center;
+  margin-top : 15px;
+  /* height : 900px;
+  overflow : scroll; */
+}
+
+.online-user img{
+  height : 20px;
+  width : 20px;
+  border-radius: 50%;
+}
+
+.online-button{
+  width : 10px;
+  height : 10px;
+  background : rgb(101, 155, 101);
+  border-radius: 50%;
+}
+
+.chat-now{
+  background : rgb(50, 50, 78);
+  color : white;
+  border :0px;
+  outline: 0px;
+  padding: 10px;
+}
