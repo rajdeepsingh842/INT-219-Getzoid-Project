@@ -211,3 +211,35 @@ hr{
   outline: 0px;
   padding: 10px;
 }
+
+#chat-box{
+  position : fixed;
+  bottom : 0px;
+  width : 100%;
+  justify-content: right;
+  flex-direction: row-reverse;
+  height : auto;
+}
+
+.chat-window{
+  width : 20%;
+  margin-right : 20px;
+}
+
+.chat-details{
+  background :linear-gradient(rgb(18, 18, 53),rgb(44, 75, 75));
+  color : White;
+  width : 100%;
+  padding : 15px;
+  justify-content: space-around;
+  font-weight: bolder;
+  font-family: sans-serif;
+}
+
+.chat-details button{
+  background : rgb(32, 33, 73);
+  border : 0px;
+  outline : 0px;
+  color  : white;
+  padding : 5px 10px;
+}
