@@ -17,6 +17,6 @@
 
             return;
         }
-        window.location.replace('home.html');
+        window.location.replace('./html/home.html');
     })
 }

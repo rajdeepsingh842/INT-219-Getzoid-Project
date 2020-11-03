@@ -44,7 +44,7 @@
             return;
         }
 
-        window.location.replace('sign_in.html');
+        window.location.replace('../sign_in.html');
 
     });
 }
