@@ -4,6 +4,25 @@
     submitButton.on('click',function(e){
 
         e.preventDefault();
+
+        let form = $('form');
+        let allInputs = $('input',form);
+
+        for(let input of allInputs){
+            if($(input).val() == ''){
+                new Noty({
+                    theme : 'sunset',
+                    color:'red',
+                    timeout : 1000,
+                    text : 'Fill Up All Fields',
+                    progressBar : true,
+                    layout : 'topRight',
+    
+                }).show();
+
+                return;
+            }
+        }
         let password = $('#password-field').val();
 
         let confirmPassword = $('#confirm-password-field').val();
