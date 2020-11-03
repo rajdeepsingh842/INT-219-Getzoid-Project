@@ -2,6 +2,7 @@
 
     let commentCount = 1;
 
+    //add event listener to submit button of a new comment form
     function addSubmitCommentButton(commentButton){
         $(commentButton).on('click',function(e){
 
@@ -43,6 +44,7 @@
         addSubmitCommentButton(commentButton); 
     }
 
+    //create a new comment DOM object
     function getNewComment(commentContent,commentUser){
         return $(`
 
@@ -52,6 +54,8 @@
         `);
     }
 
+
+    //add event listener to delete button of a comment
     function addDeleteButton(deleteButton){
         $(deleteButton).on('click',function(e){
             e.preventDefault();

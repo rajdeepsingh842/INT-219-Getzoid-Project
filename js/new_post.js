@@ -2,6 +2,7 @@
     let postCount = 1;
     let newPostSubmit = $('#post-submit-button');
 
+    //add event listener to the submit button of the form to create a new post
     newPostSubmit.on('click',function(e){
         e.preventDefault();
 
@@ -38,6 +39,7 @@
 
     });
 
+    //create a new post DOM object
     function getNewPost(content , username){
 
         let date=new Date();
@@ -63,6 +65,7 @@
         `);
     }
 
+    //add event listener to delete button of a post
     function addDeleteButton(deleteButton){
         console.log(deleteButton);
         $(deleteButton).on('click',function(){

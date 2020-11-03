@@ -1,5 +1,6 @@
 {
 
+    //function add event listener to like button of a post
     function addLikeButton(likeButton){
         $(likeButton).on('click',function(){
             let postId = $(likeButton).attr('id');

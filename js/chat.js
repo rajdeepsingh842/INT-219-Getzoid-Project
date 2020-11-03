@@ -1,5 +1,6 @@
 {
 
+    //create a chat window
     let addChatWindow = function(chatButton){
         $(chatButton).click(function(e){
             e.preventDefault();
@@ -22,6 +23,7 @@
         addChatWindow(chatButton);
     }
 
+    //create a new chatbox DOM object
     function getNewChatWindow(userId){
 
         return $(`
@@ -60,6 +62,7 @@
     }
 
 
+    //add event listener to the close button of a chatbox
     function addChatBoxDelete(deleteChatBoxButton){
         $(deleteChatBoxButton).on('click' , function(e){
             e.preventDefault();
@@ -70,6 +73,7 @@
         })
     }
 
+    //add event listener to the minimize button of a chatbox
     function addMinimizeBoxButton(minimizeChatBoxButton){
         $(minimizeChatBoxButton).on('click',function(e){
             e.preventDefault();

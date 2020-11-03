@@ -1,6 +1,7 @@
 {
     let submitButton = $('#submit-button');
 
+    //add event listener to the submit button of sign in page
     submitButton.on('click',function(e){
 
         e.preventDefault();
