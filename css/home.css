@@ -43,7 +43,7 @@
 
 #main-feed-container{
   flex-direction: column;
-  padding: 0px 100px;
+  padding: 0px 50px;
   border-right : 1px solid grey;
 }
 
@@ -169,7 +169,7 @@ hr{
 
 #online-users{
   flex-direction: column;
-  padding : 0px 10px;
+  padding : 0px 68px;
   align-items: center;
   width : 22%;
 }
@@ -304,6 +304,11 @@ hr{
 .messages{
   width : 100%;
   flex-direction: column;
+}
+
+#back-cover{
+  width : 30%;
+ height : 30%;
 }
 
 

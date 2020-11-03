@@ -1,12 +1,13 @@
 <!DOCTYPE html>
 <header>
-    <title>Getzoid | Home</title>
+    <title>Getzoid | Profile</title>
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/noty/3.1.4/noty.min.css">
     <script src="https://cdnjs.cloudflare.com/ajax/libs/noty/3.1.4/noty.min.js"></script>
     <script src="../js/jquery.min.js"></script>
     <link rel='icon' type='image/png' href="../images/getzoid1.png">
     <link rel="stylesheet" type="text/css" href="../css/header.css">
     <link rel="stylesheet" type="text/css" href="../css/home.css">
+    <link rel="stylesheet" type="text/css" href="../css/profile.css">
 </header>
 <body>
 
@@ -26,6 +27,7 @@
 
     <main id="main-container" class="flex">
 
+
         <div id="left-side-bar" class="flex">
             <img src="../images/default.png">
             <a href="home.html">Feed</a>
@@ -34,35 +36,34 @@
 
         <div id="main-feed-container" class="flex">
             <div>
-                <div id="new-post-form">
+                <img src="../images/background.jpg" id="back-cover">
+            </div>
+
+            <img src="../images/default.png" id="profile-picture">
+            <br><br>
+            <div id="user-details" class="flex">
+                <span>Name : User</span>
+                <span>DOB : 12/11/1991</span>
+                <span>Joined : 20/10/2020</span>
+                <span>From : Jalandhar</span>
+            </div>
+            <hr>
+            <div id="new-post-form">
                     <form action="" method="POST">
                         <textarea id="post-content" rows=5 cols=60 placeholder="What's up in your mind?" required></textarea>
                         <input type="text" id="username" placeholder="Your name..." required>
                         <button id="post-submit-button" type="submit">Submit</button>
                     </form>
-                </div>
             </div>
 
             <div id="posts-list-container" class="flex">
-                <div id="post-container-1" class="post-container flex">
-                    <div class="post-user flex">
-                        <span class="flex post-user-name"><img src="../images/default.png"> <strong>Kenny</strong></span><span class="delete-button" id="1" title="delete post"><img src="../images/delete-button.png"></span>
-                    </div>
-                    <hr>
-                    <span class="content">New Post</span>
-                    <hr>
-                    <span class="post-details"><span class="like-button" id="1"><img src="../images/like-button.png"><span id="likes-1">0</span>Likes</span><span>Created At : 28 Oct 3:55</span></span>
-                    <form class="new-comment-form" action="">
-                        <input type="text" id="new-comment-1" class="new-comment-content" placeholder="Add comment..." required>
-                        <input type="text" id="comment-form-name-1" placeholder="Your name" required>
-                        <input type="submit" id="1" class="new-comment-submit">
-                    </form>
-                    <div id="comment-1" class="comment-container">
-                        <span>Comment 1 by Kenny</span><span class="delete-comment-button" id="1"><img src = "../images/delete-button.png"></span>
-                    </div>
-                </div> 
+
             </div>
+
         </div>
+
+
+
 
         <div id="online-users" class="flex">
             <h2 id="online-users-heading">Online Users</h2>
@@ -106,4 +107,5 @@
     <script src="../js/chat.js"></script>
 
     </script>
-</body>
+    </body>
+    </html>
